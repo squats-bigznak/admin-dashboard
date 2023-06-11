@@ -27,12 +27,13 @@ time, mark, audio, video {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(11,clamp(6px, 9%, 34px));
-    grid-template-rows: repeat(11, clamp(6px, 9%, 34px));
+    grid-template-columns: repeat(11,clamp(24px, 9%, 34px));
+    grid-template-rows: repeat(11, clamp(24px, 9%, 34px));
     column-gap: 1px;
     row-gap: 1px;
     text-align: center;
-    padding: 16px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   
   .container div {    
@@ -48,7 +49,7 @@ time, mark, audio, video {
     grid-column-start:1;
     grid-column-end:7;
     grid-row-start:1;
-    grid-row-end:20;  
+    grid-row-end:14;  
   }
 
   .logo{
@@ -79,6 +80,7 @@ time, mark, audio, video {
     display: flex;
     margin-top: 20px;
     justify-content: space-between;
+    /* align-content: space-around; */
     flex-direction: row;
   }
 
@@ -92,8 +94,9 @@ time, mark, audio, video {
   .lower{
     display: flex;
     justify-content: space-between;
-    align-content: space-around;
+    /* align-content: space-around; */
     flex-direction: row;
+    /* margin-bottom: 20px; */
   }
 
   .main{
@@ -104,7 +107,7 @@ time, mark, audio, video {
     grid-column-start:7;
     grid-column-end:20;
     grid-row-start:6;
-    grid-row-end:20;
+    grid-row-end:14;
   }
 
   .projects {
@@ -118,7 +121,7 @@ time, mark, audio, video {
     grid-column-start:1;
     grid-column-end:10;
     grid-row-start:1;
-    grid-row-end:10;
+    grid-row-end:14;
   }
   
   .projects p {
@@ -132,6 +135,7 @@ time, mark, audio, video {
     background-color: #FFFFFF;
     color: black;
     text-align: center;
+    
   }
 
   .rightside{
@@ -143,7 +147,7 @@ time, mark, audio, video {
     /* grid-column-start:11; */
     grid-column-end:20;
     grid-row-start:1;
-    grid-row-end:10;
+    grid-row-end:14;
 
   }
 
@@ -153,6 +157,7 @@ time, mark, audio, video {
     grid-template-rows: repeat(2fr, minmax(10px, 1fr));
     grid-template-columns: repeat(2fr, minmax(20px, 1fr)); */
     background-color: #bccbde;
+    
     /* grid-column-start:11;
     grid-column-end:20;
     grid-row-start:6;
@@ -164,12 +169,18 @@ time, mark, audio, video {
     font-family: sans-serif;
     color: white;
     text-align: left;
+    
   }
   
   .announcements  .card {
     background-color: #FFFFFF;
     color: black;
     text-align: center;
+    /* border: #3b3e47;
+    border-width: 1px; */
+    border-bottom: #bccbde;
+    border-style: ridge;
+    
   }
 
   .trending {
@@ -190,28 +201,33 @@ time, mark, audio, video {
     font-family: sans-serif;
     color: white;
     text-align: left;
+    
   }
 
   .trending  .card {
     background-color: #FFFFFF;
     color: black;
     text-align: left;
+    
   }
 
   .card p {
     color: black;
     font-weight: normal;
     font-size: 14px;
+    
   }
   
   .card .title {
     font-size: 18px;
     text-align: center;
+    
   }
 
   li{
     list-style-type: none;
     margin: 1em 0;
+    /* float:right; */
   }
 
   .svg-img{
@@ -239,6 +255,40 @@ time, mark, audio, video {
     touch-action: manipulation;
     width: auto;
   }
+
+  button:hover{
+    color: #4b13bb;
+    border: #4b13bb solid 1px;
+    background:#fff;
+  }
+
+  button:active {
+    margin-left: 1px 1px 0;
+    box-shadow: -1px -1px 1px #000;
+    outline: 1px solid black;
+    background-image: linear-gradient(to top, #f4f5f5, #dfdddd);
+}
+
+h1{
+  float:right;
+  text-align: center;
+}
+
+h1:hover{
+   color: #beafde;
+   transition: all 500ms ease; 
+  font-size: 20px;
+    /* border: #4b13bb solid 1px; */
+    /* background:#fff; */
+
+}
+
+h1:active {
+  color: #bfe9eb;
+  
+  
+  /* background-image: linear-gradient(to top, #f4f5f5, #dfdddd); */
+}
 
 h4 {
     justify-self: flex-start;
